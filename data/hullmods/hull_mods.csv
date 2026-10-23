@@ -1,0 +1,2 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite,
+Remote Control System,PJ_projetLink,,,,"no_drop, special, no_build_in",Special,,TRUE,,,10,15,20,30,PJ.hullmods.ProjetLink,"A remote control system allowing Pro-Jet to control a ship.",Allows Pro-Jet to control ship,,graphics/pj/hullmods/projet_link.png

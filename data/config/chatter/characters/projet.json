@@ -1,0 +1,64 @@
+{
+	"name":"Pro-Jet",
+	"personalities":["reckless"],
+	"gender":["f"],
+	"chance":0, # manually set via memory when she is created
+	"talkativeness":1,
+	"categoryTags":["Projet", "special"],
+	
+	"lines":{
+		"start":[
+			{"text":"Target confirmed... terminating!"},
+			{"text":"Target must be eliminated!"},
+		],
+		"start_boss":[
+			{"text":"High energy target confirmed..."},
+		],
+		"retreat":[
+			{"text":"Disengaging."},
+			{"text":"Falling back."},
+		],
+		"out_of_missiles":[
+			{"text":"Missiles ammunition depleted."},
+			{"text":"Run out of missiles."},
+		],
+		"engaged":[
+			{"text":"Enganged, termination in progress..."},
+			{"text":"Enganged, elimination in progress..."},
+		],
+		"need_help":[
+			{"text":"Enganged with target rich environment."},
+		],
+		"pursuing":[
+			{"text":"Pursuing target."},
+			{"text":"Engaging pursuit mode."},
+		],
+		"running":[
+			{"text":"Backing off."},
+		],
+		"hull_90":[
+			{"text":"Minor damage."},
+			{"text":"Damage report: Negligible."},
+		],
+		"hull_50":[
+			{"text":"Moderate damage."},
+			{"text":"Damage report: Concerning."},
+		],
+		"hull_30":[
+			{"text":"Major damage."},
+			{"text":"Damage report: Critical."},
+		],
+		"overload":[
+			{"text":"Overloaded!"},
+			{"text":"Flux overflow!"},
+		],
+		"death":[
+			{"text":"Disconnecting..."},
+			{"text":"Shutting down..."},
+		],
+		"victory":[
+			{"text":"Termination completed!"},
+			{"text":"Elimination completed!"},
+		],
+	}
+}
