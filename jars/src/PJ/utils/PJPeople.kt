@@ -7,7 +7,9 @@ import com.fs.starfarer.api.characters.FullName
 import com.fs.starfarer.api.characters.ImportantPeopleAPI
 import com.fs.starfarer.api.characters.PersonAPI
 import com.fs.starfarer.api.impl.campaign.ids.Personalities
+import com.fs.starfarer.api.impl.campaign.ids.Ranks
 import com.fs.starfarer.api.impl.campaign.ids.Skills
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.AICores
 
 object PJPeople {
 
@@ -28,10 +30,9 @@ object PJPeople {
 
         val person = Global.getFactory().createPerson().apply {
             id = PROJET
-            setFaction("pj_projetFaction")
+            setFaction("player")
             gender = FullName.Gender.FEMALE
-            rankId = "pj_projet"
-            postId = "pj_projet"
+            rankId = Ranks.PILOT
             name.first = "Pro-Jet"
             name.last = ""
             importance = PersonImportance.VERY_HIGH
@@ -39,12 +40,15 @@ object PJPeople {
                 .getSpriteName("portraits", "pj_projet")
             setPersonality(Personalities.RECKLESS)
 
-            stats.level = 5
+            stats.level = 7
             stats.setSkillLevel(Skills.COMBAT_ENDURANCE, 1f)
-            stats.setSkillLevel(Skills.SYSTEMS_EXPERTISE, 1f)
             stats.setSkillLevel(Skills.GUNNERY_IMPLANTS, 1f)
             stats.setSkillLevel(Skills.ORDNANCE_EXPERTISE, 1f)
             stats.setSkillLevel(Skills.FIELD_MODULATION, 1f)
+            stats.setSkillLevel(Skills.IMPACT_MITIGATION, 1f)
+            stats.setSkillLevel(Skills.HELMSMANSHIP, 1f)
+            stats.setSkillLevel(Skills.TARGET_ANALYSIS, 1f)
+            setAICoreId("alpha_core")
 
             memoryWithoutUpdate.set("\$chatterChar", "projet")
         }

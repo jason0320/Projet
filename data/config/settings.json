@@ -1,7 +1,8 @@
 {
 	"graphics":{
 		"portraits":{
-			"pj_projet":"graphics/pj/portraits/characters/pj_projet.png",
-		},
+          "pj_projet":"graphics/portraits/portrait_ai2b.png",
+          "pj_projet1":"graphics/portraits/characters/omega.png"
+        },
 	},
 }

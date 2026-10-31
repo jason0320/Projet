@@ -18,7 +18,6 @@ class PJmodPlugins : BaseModPlugin() {
     private fun initializeProjet() {
         PJPeople.register()
         ProjetScript.register()
-
     }
 
 

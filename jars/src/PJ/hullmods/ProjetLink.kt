@@ -36,13 +36,5 @@ class ProjetLink : BaseHullMod() {
             )
             return
         }
-
-        tooltip.addSectionHeading("Remote Control System", Alignment.MID, pad)
-        tooltip.addPara(
-            "When no human officer is assigned to this ship, Projet will be assigned command instead.",
-            pad,
-            Misc.getEnergyMountColor(),
-            "Projet"
-        )
     }
 }

@@ -1,1 +1,3 @@
+0.0.2: Overhauled the whole thing
+
 0.0.1: Initial release
