@@ -1,19 +1,19 @@
 id,trigger,conditions,script,text,options,notes
 "#Projet Event",,,,,,,,,,,,,,
 pj_projetBarEvent,AddBarEvents,"$faction.id == independent
-$player.credits >= 2000000
+$player.credits >= 1000000
 !$market.isHidden
 !$global.projetBarEvent
 RollProbability 0.8","AddBarEvent pj_projetBarEvent1 ""Approach the displeased-looking merchant"" ""A merchant wearing a suit wears a rather troubled expression on their face."" highlight",,,,,,,,,,,,,,
 pj_projetBarEvent1,DialogOptionSelected,$option == pj_projetBarEvent1,sb_showRandomPerson independent 0,"They seem engrossed in something on their Tripad, but the moment your presence is noticed their head perks up.
 
-""Ah, how fortunate. Captain, I hope?"" You give an affirmative nod. ""I'm in dire need of credits. For 2 million credits you can have my prototype modular ship control system, deal?""
+""Ah, how fortunate. Captain, I hope?"" You give an affirmative nod. ""I'm in dire need of credits. For 1 million credits you can have my prototype modular ship control system, deal?""
 
 You suspect this person is out of their mind","0:pj_projetBarEvent2a:""Okay.""
 70:pj_projetBarEvent2b:""No thanks, good luck!""",,,,,,,,,,,,,,
-pj_projetBarEvent2a,DialogOptionSelected,$option == pj_projetBarEvent2a,AddCredits -2000000,"""Fantastic!"" They seem rather enthusiastic about your apparent indifference.
+pj_projetBarEvent2a,DialogOptionSelected,$option == pj_projetBarEvent2a,AddCredits -1000000,"""Fantastic!"" They seem rather enthusiastic about your apparent indifference.
 
-After transferring 2 million credits, they shove a device in your hand, then quickly excuse themselves from the table. ""My apologies, I have to go for an important arrangement now.""
+After transferring 1 million credits, they shove a device in your hand, then quickly excuse themselves from the table. ""My apologies, I have to go for an important arrangement now.""
 
 ""Farewell, good luck, etc cetera!"" The merchant waves from over their shoulder as they leave. They don't seem very good with conversation.",0:pj_projetBarEvent3:Continue,,,,,,,,,,,,,,
 

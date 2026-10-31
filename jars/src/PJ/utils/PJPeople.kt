@@ -40,15 +40,11 @@ object PJPeople {
                 .getSpriteName("portraits", "pj_projet")
             setPersonality(Personalities.RECKLESS)
 
-            stats.level = 7
-            stats.setSkillLevel(Skills.COMBAT_ENDURANCE, 1f)
-            stats.setSkillLevel(Skills.GUNNERY_IMPLANTS, 1f)
-            stats.setSkillLevel(Skills.ORDNANCE_EXPERTISE, 1f)
-            stats.setSkillLevel(Skills.FIELD_MODULATION, 1f)
-            stats.setSkillLevel(Skills.IMPACT_MITIGATION, 1f)
-            stats.setSkillLevel(Skills.HELMSMANSHIP, 1f)
-            stats.setSkillLevel(Skills.TARGET_ANALYSIS, 1f)
-            setAICoreId("alpha_core")
+            stats.level = 3
+            stats.setSkillLevel(Skills.HELMSMANSHIP, 2f)
+            stats.setSkillLevel(Skills.IMPACT_MITIGATION, 2f)
+            stats.setSkillLevel(Skills.COMBAT_ENDURANCE, 2f)
+            setAICoreId("gamma_core")
 
             memoryWithoutUpdate.set("\$chatterChar", "projet")
         }
