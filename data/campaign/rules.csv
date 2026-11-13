@@ -5,7 +5,7 @@ $player.credits >= 1000000
 !$market.isHidden
 !$global.projetBarEvent
 RollProbability 0.8","AddBarEvent pj_projetBarEvent1 ""Approach the displeased-looking merchant"" ""A merchant wearing a suit wears a rather troubled expression on their face."" highlight",,,,,,,,,,,,,,
-pj_projetBarEvent1,DialogOptionSelected,$option == pj_projetBarEvent1,sb_showRandomPerson independent 0,"They seem engrossed in something on their Tripad, but the moment your presence is noticed their head perks up.
+pj_projetBarEvent1,DialogOptionSelected,$option == pj_projetBarEvent1,pj_showRandomPerson independent 0,"They seem engrossed in something on their Tripad, but the moment your presence is noticed their head perks up.
 
 ""Ah, how fortunate. Captain, I hope?"" You give an affirmative nod. ""I'm in dire need of credits. For 1 million credits you can have my prototype modular ship control system, deal?""
 

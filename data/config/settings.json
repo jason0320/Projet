@@ -7,4 +7,8 @@
           "pj_projet3":"graphics/portraits/characters/omega.png"
         },
 	},
+	
+	"ruleCommandPackages":[
+		"PJ.rulecmd",
+	],
 }

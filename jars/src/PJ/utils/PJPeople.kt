@@ -10,6 +10,7 @@ import com.fs.starfarer.api.impl.campaign.ids.Personalities
 import com.fs.starfarer.api.impl.campaign.ids.Ranks
 import com.fs.starfarer.api.impl.campaign.ids.Skills
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.AICores
+import com.fs.starfarer.api.util.Misc
 
 object PJPeople {
 
@@ -31,7 +32,7 @@ object PJPeople {
         val person = Global.getFactory().createPerson().apply {
             id = PROJET
             setFaction("player")
-            gender = FullName.Gender.FEMALE
+            gender = FullName.Gender.ANY
             rankId = Ranks.PILOT
             name.first = "Pro-Jet"
             name.last = ""
@@ -39,7 +40,6 @@ object PJPeople {
             portraitSprite = Global.getSettings()
                 .getSpriteName("portraits", "pj_projet")
             setPersonality(Personalities.RECKLESS)
-
             stats.level = 3
             stats.setSkillLevel(Skills.HELMSMANSHIP, 2f)
             stats.setSkillLevel(Skills.IMPACT_MITIGATION, 2f)
@@ -48,7 +48,6 @@ object PJPeople {
 
             memoryWithoutUpdate.set("\$chatterChar", "projet")
         }
-
         ip.addPerson(person)
     }
 }

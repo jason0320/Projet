@@ -173,6 +173,7 @@ class ProjetScript : EveryFrameScript {
         projet.setAICoreId("omega_core")
     }
 
+
     companion object {
         const val HULLMOD_ID = "PJ_projetLink"
         private const val UPGRADED_KEY1 = "\$PJ_ProjetThreatUpgraded1"
